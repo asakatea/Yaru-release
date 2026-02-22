@@ -1,0 +1,65 @@
+{
+  "version": "0.0.3-alpha",
+  "build_number": 3,
+  "release_date": "2026-02-22T07:48:18Z",
+  "min_supported_version": "0.0.0",
+  "platforms": {
+    "windows": {
+      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/alpha/Yaru-Windows-0.0.3-alpha.exe",
+      "installer_sha256": "787c62cd1adf385fae48468176f724390e1465b2898d4a1fe49f57d6adb5e8bf",
+      "installer_size": 45824693
+    },
+    "android": {
+      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/alpha/Yaru-Android-0.0.3-alpha.apk",
+      "installer_sha256": "3e0c6828a7dcda56f4fd86fa0fbdadb71845af79fe74b57821ff5c43ee750e10",
+      "installer_size": 87618786
+    }
+  },
+  "changelog": {
+    "zh": [
+      {
+        "type": "fix",
+        "text": "修复了题库->题目详情每个数学公式错误换行的问题。"
+      },
+      {
+        "type": "improvement",
+        "text": "增强了 AI 聊天功能。"
+      },
+      {
+        "type": "feature",
+        "text": "新增书库阅读器配套功能。"
+      },
+      {
+        "type": "fix",
+        "text": "修复了在记忆模块->市场下载卡片后不会自动添加到牌组库的问题。"
+      },
+      {
+        "type": "improvement",
+        "text": "删除了注册界面的验证码。"
+      }
+    ],
+    "en": [
+      {
+        "type": "fix",
+        "text": "修复了题库->题目详情每个数学公式错误换行的问题。"
+      },
+      {
+        "type": "improvement",
+        "text": "增强了 AI 聊天功能。"
+      },
+      {
+        "type": "feature",
+        "text": "新增书库阅读器配套功能。"
+      },
+      {
+        "type": "fix",
+        "text": "修复了在记忆模块->市场下载卡片后不会自动添加到牌组库的问题。"
+      },
+      {
+        "type": "improvement",
+        "text": "删除了注册界面的验证码。"
+      }
+    ]
+  },
+  "release_notes_url": "https://github.com/asakatea/Yaru-release/releases/tag/alpha"
+}
