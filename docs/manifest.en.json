@@ -1,0 +1,149 @@
+{
+  "version": "1.5.1",
+  "articles": [
+    {
+      "slug": "getting-started",
+      "title": "Getting Started",
+      "description": "Account creation, navigation overview, and quick setup",
+      "category": "general",
+      "icon": "rocket-launch",
+      "sortOrder": 0,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "notes-guide",
+      "title": "Notes Guide",
+      "description": "Vault storage, wiki links, knowledge graph, and more",
+      "category": "notes",
+      "icon": "notebook",
+      "sortOrder": 1,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "learning-guide",
+      "title": "Learning Guide",
+      "description": "Courses, lessons, productivity tools, and progress tracking",
+      "category": "learning",
+      "icon": "graduation-cap",
+      "sortOrder": 2,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "memory-guide",
+      "title": "Memory Guide",
+      "description": "Flashcard decks, FSRS reviews, AI card generation",
+      "category": "memory",
+      "icon": "brain",
+      "sortOrder": 3,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "library-guide",
+      "title": "Library Guide",
+      "description": "Books, PDFs, AI Intel toolbar, and reading workflow",
+      "category": "library",
+      "icon": "books",
+      "sortOrder": 4,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "editor-guide",
+      "title": "Editor Guide",
+      "description": "Block types, slash commands, flashcard syntax, and YFM",
+      "category": "editor",
+      "icon": "pencil-line",
+      "sortOrder": 5,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "practice-guide",
+      "title": "Practice Guide",
+      "description": "Question bank, knowledge-point training, paper and exam workflows",
+      "category": "practice",
+      "icon": "target",
+      "sortOrder": 6,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "ai-tools-guide",
+      "title": "AI Tools Guide",
+      "description": "AI chat, photo solve, global search, and video summary",
+      "category": "ai",
+      "icon": "sparkle",
+      "sortOrder": 7,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "extensions-guide",
+      "title": "Extensions Guide",
+      "description": "Captures, feeds, media synthesis, and automation hub",
+      "category": "extensions",
+      "icon": "puzzle-piece",
+      "sortOrder": 8,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "collaboration-guide",
+      "title": "Collaboration Guide",
+      "description": "Forum and team collaboration features",
+      "category": "collaboration",
+      "icon": "users-three",
+      "sortOrder": 9,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "studio-guide",
+      "title": "Studio Guide",
+      "description": "Creator workflows, review, and role-gated modules",
+      "category": "studio",
+      "icon": "pencil-line",
+      "sortOrder": 10,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "profile-guide",
+      "title": "Profile Guide",
+      "description": "Profile settings, social cards, and account pages",
+      "category": "profile",
+      "icon": "user-circle",
+      "sortOrder": 11,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "settings-guide",
+      "title": "Settings Guide",
+      "description": "Appearance, language, sync, privacy, and AI engine settings",
+      "category": "settings",
+      "icon": "gear",
+      "sortOrder": 12,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "troubleshooting-guide",
+      "title": "Troubleshooting",
+      "description": "Common issues, diagnostics, and support workflow",
+      "category": "support",
+      "icon": "warning-circle",
+      "sortOrder": 13,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "user-guide",
+      "title": "User Guide",
+      "description": "Friendly handbook for learners with feature map and usage paths",
+      "category": "general",
+      "icon": "user-circle",
+      "sortOrder": 14,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "developer-guide",
+      "title": "Developer Guide",
+      "description": "Architecture, modules, API surface, and development workflow",
+      "category": "developer",
+      "icon": "code",
+      "sortOrder": 15,
+      "updatedAt": "2026-02-17"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "version": "1.5.1",
+  "articles": [
+    {
+      "slug": "getting-started",
+      "title": "入門指南",
+      "description": "帳戶建立、導覽概述和快速設定",
+      "category": "general",
+      "icon": "rocket-launch",
+      "sortOrder": 0,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "notes-guide",
+      "title": "筆記指南",
+      "description": "倉庫儲存、Wiki 連結、知識圖譜等",
+      "category": "notes",
+      "icon": "notebook",
+      "sortOrder": 1,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "learning-guide",
+      "title": "學習指南",
+      "description": "課程、課時、生產力工具和進度追蹤",
+      "category": "learning",
+      "icon": "graduation-cap",
+      "sortOrder": 2,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "memory-guide",
+      "title": "記憶指南",
+      "description": "閃卡牌組、FSRS V5 複習、AI 製卡工廠",
+      "category": "memory",
+      "icon": "brain",
+      "sortOrder": 3,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "library-guide",
+      "title": "書庫指南",
+      "description": "圖書、PDF、AI 工具列和閱讀進度",
+      "category": "library",
+      "icon": "books",
+      "sortOrder": 4,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "editor-guide",
+      "title": "編輯器指南",
+      "description": "區塊類型、斜線命令、閃卡語法和 YFM 格式",
+      "category": "editor",
+      "icon": "pencil-line",
+      "sortOrder": 5,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "practice-guide",
+      "title": "練習與考試指南",
+      "description": "題庫模式、知識點訓練、試卷庫與考試流程",
+      "category": "practice",
+      "icon": "target",
+      "sortOrder": 6,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "ai-tools-guide",
+      "title": "AI 工具指南",
+      "description": "AI Chat、閱讀輔助、摘要測驗與學習加速工具",
+      "category": "ai",
+      "icon": "sparkle",
+      "sortOrder": 7,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "extensions-guide",
+      "title": "擴展模組指南",
+      "description": "Captures、Feeds、Media、Automation 的使用說明",
+      "category": "extensions",
+      "icon": "puzzle-piece",
+      "sortOrder": 8,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "collaboration-guide",
+      "title": "協作功能指南",
+      "description": "論壇與團隊協作流程、成員管理與角色說明",
+      "category": "collaboration",
+      "icon": "users-three",
+      "sortOrder": 9,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "studio-guide",
+      "title": "創作工作室指南",
+      "description": "Studio 內容生產、審核鏈路與權限分層",
+      "category": "studio",
+      "icon": "pencil-line",
+      "sortOrder": 10,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "profile-guide",
+      "title": "個人中心指南",
+      "description": "個人頁、社交資訊、偏好入口與帳號操作",
+      "category": "profile",
+      "icon": "user-circle",
+      "sortOrder": 11,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "settings-guide",
+      "title": "設定中心指南",
+      "description": "外觀、語言、同步、隱私、AI 與開發者設定",
+      "category": "settings",
+      "icon": "gear",
+      "sortOrder": 12,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "troubleshooting-guide",
+      "title": "常見問題與排錯",
+      "description": "登入、同步、閱讀、AI 與性能問題處理",
+      "category": "support",
+      "icon": "warning-circle",
+      "sortOrder": 13,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "user-guide",
+      "title": "普通用戶手冊",
+      "description": "面向學習者的友好手冊與功能導覽",
+      "category": "general",
+      "icon": "user-circle",
+      "sortOrder": 14,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "developer-guide",
+      "title": "開發者手冊",
+      "description": "面向開發者的架構、模組、介面與貢獻流程說明",
+      "category": "developer",
+      "icon": "code",
+      "sortOrder": 15,
+      "updatedAt": "2026-02-17"
+    }
+  ]
+}

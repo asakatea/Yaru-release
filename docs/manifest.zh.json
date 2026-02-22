@@ -1,0 +1,149 @@
+{
+  "version": "1.5.1",
+  "articles": [
+    {
+      "slug": "getting-started",
+      "title": "入门指南",
+      "description": "账号创建、导航结构、模块地图与快速上手",
+      "category": "general",
+      "icon": "rocket-launch",
+      "sortOrder": 0,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "notes-guide",
+      "title": "笔记指南",
+      "description": "仓库、Wiki 链接、图谱、AI 面板与导入导出",
+      "category": "notes",
+      "icon": "notebook",
+      "sortOrder": 1,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "learning-guide",
+      "title": "学习指南",
+      "description": "学习首页、课程流、深度学习入口与生产力工具",
+      "category": "learning",
+      "icon": "graduation-cap",
+      "sortOrder": 2,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "memory-guide",
+      "title": "记忆指南",
+      "description": "牌组管理、复习会话、Anki 导入、洞察与市场",
+      "category": "memory",
+      "icon": "brain",
+      "sortOrder": 3,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "library-guide",
+      "title": "书库指南",
+      "description": "书架与阅读器、AI Intel、Flow Desk 与沉浸阅读",
+      "category": "library",
+      "icon": "books",
+      "sortOrder": 4,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "editor-guide",
+      "title": "编辑器指南",
+      "description": "区块编辑、斜杠命令、闪卡语法与 YFM",
+      "category": "editor",
+      "icon": "pencil-line",
+      "sortOrder": 5,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "practice-guide",
+      "title": "练习与考试指南",
+      "description": "题库模式、知识点训练、试卷库与考试流程",
+      "category": "practice",
+      "icon": "target",
+      "sortOrder": 6,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "ai-tools-guide",
+      "title": "AI 工具指南",
+      "description": "AI Chat、拍题、全局搜索、视频总结与数学工具",
+      "category": "ai",
+      "icon": "sparkle",
+      "sortOrder": 7,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "extensions-guide",
+      "title": "扩展模块指南",
+      "description": "Captures、Feeds、Media、Automation 的使用说明",
+      "category": "extensions",
+      "icon": "puzzle-piece",
+      "sortOrder": 8,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "collaboration-guide",
+      "title": "协作功能指南",
+      "description": "论坛与团队协作流程、成员管理与角色说明",
+      "category": "collaboration",
+      "icon": "users-three",
+      "sortOrder": 9,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "studio-guide",
+      "title": "创作工作室指南",
+      "description": "Studio 内容生产、审核链路与权限分层",
+      "category": "studio",
+      "icon": "pencil-line",
+      "sortOrder": 10,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "profile-guide",
+      "title": "个人中心指南",
+      "description": "个人页、社交信息、偏好入口与账号操作",
+      "category": "profile",
+      "icon": "user-circle",
+      "sortOrder": 11,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "settings-guide",
+      "title": "设置中心指南",
+      "description": "外观、语言、同步、隐私、AI 与开发者设置",
+      "category": "settings",
+      "icon": "gear",
+      "sortOrder": 12,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "troubleshooting-guide",
+      "title": "常见问题与排错",
+      "description": "登录、同步、阅读、AI 与性能问题处理",
+      "category": "support",
+      "icon": "warning-circle",
+      "sortOrder": 13,
+      "updatedAt": "2026-02-17"
+    },
+    {
+      "slug": "user-guide",
+      "title": "普通用户手册",
+      "description": "面向学习者的友好手册与功能导览（含思维导图）",
+      "category": "general",
+      "icon": "user-circle",
+      "sortOrder": 14,
+      "updatedAt": "2026-02-14"
+    },
+    {
+      "slug": "developer-guide",
+      "title": "开发者手册",
+      "description": "面向开发者的架构、模块、接口与贡献流程说明",
+      "category": "developer",
+      "icon": "code",
+      "sortOrder": 15,
+      "updatedAt": "2026-02-17"
+    }
+  ]
+}

@@ -13,6 +13,11 @@
       "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/alpha/Yaru-Android-0.0.3-alpha.apk",
       "installer_sha256": "3e0c6828a7dcda56f4fd86fa0fbdadb71845af79fe74b57821ff5c43ee750e10",
       "installer_size": 87618786
+    },
+    "linux": {
+      "portable_url": "https://github.com/asakatea/Yaru-release/releases/download/alpha/Yaru-Linux-bundle-0.0.3-alpha.tar.xz",
+      "portable_sha256": "1d7fa4850291afe0a367d06b3da2cafe57ffb2d73e9274b65f7050f834886541",
+      "portable_size": 48478420
     }
   },
   "changelog": {
