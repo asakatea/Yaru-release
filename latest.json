@@ -1,23 +1,23 @@
 {
-  "version": "0.0.4-alpha",
-  "build_number": 4,
-  "release_date": "2026-02-22T09:07:49Z",
+  "version": "0.0.5-alpha",
+  "build_number": 5,
+  "release_date": "2026-03-03T05:21:42Z",
   "min_supported_version": "0.0.0",
   "platforms": {
     "windows": {
-      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.4-alpha/Yaru-Windows-0.0.4-alpha.exe",
-      "installer_sha256": "3587ccd6d1ce19d616fddcc6da63ca527391fb2fc9d0cede21703a4ec6dff65a",
-      "installer_size": 45823205
+      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.5-alpha/Yaru-WINDOWS-0.0.5-alpha.exe",
+      "installer_sha256": "ca51db556920c5c85d198465d9917882154b21587de5d34af4b910960517f439",
+      "installer_size": 50053400
     },
     "android": {
-      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.4-alpha/Yaru-Android-0.0.4-alpha.apk",
-      "installer_sha256": "5b8a8bd2b19f981f8c47024aa25b7f11fbf0391f9afb91c3efc2e5defe86ff1e",
-      "installer_size": 87618782
+      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.5-alpha/Yaru-ANDROID-0.0.5-alpha.apk",
+      "installer_sha256": "eb62a8638657989453ac170741fc885ff853326f7086fb19a8a75053f40d300f",
+      "installer_size": 89883795
     },
     "linux": {
-      "portable_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.4-alpha/Yaru-Linux-bundle-0.0.4-alpha.tar.xz",
-      "portable_sha256": "0b739fd6ee526c6b2b163589a76b478b8371beffc1e30c38de6adf03c9213393",
-      "portable_size": 48477596
+      "portable_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.5-alpha/Yaru-LINUX-0.0.5-alpha.tar",
+      "portable_sha256": "9c5586d2c27d7b520f9a836721c9103dd2546f294699529543e48016641e018f",
+      "portable_size": 135150592
     }
   },
   "changelog": {
@@ -66,5 +66,5 @@
       }
     ]
   },
-  "release_notes_url": "https://github.com/asakatea/Yaru-release/releases/tag/0.0.4-alpha"
+  "release_notes_url": "https://github.com/asakatea/Yaru-release/releases/tag/0.0.5-alpha"
 }
