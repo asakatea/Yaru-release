@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="${GITHUB_REPOSITORY:-asakatea/Yaru-release}"
+REPO="${GITHUB_REPOSITORY:-ProjectYaru/Yaru-release}"
 API_URL="https://api.github.com/repos/${REPO}/releases/latest"
 
 if ! command -v jq >/dev/null 2>&1; then
@@ -18,6 +18,7 @@ fi
 
 tag="$(jq -r '.tag_name' <<<"${response}")"
 published_at="$(jq -r '.published_at' <<<"${response}")"
+release_html_url="$(jq -r '.html_url // empty' <<<"${response}")"
 
 if [[ -z "${tag}" || "${tag}" == "null" ]]; then
   echo "Invalid release tag from API response." >&2
@@ -29,22 +30,60 @@ if [[ -z "${build_number}" ]]; then
   build_number="0"
 fi
 
-win_url="$(jq -r '.assets[] | select(.name | test("Windows")) | .browser_download_url' <<<"${response}" | head -n 1)"
-win_sha="$(jq -r '.assets[] | select(.name | test("Windows")) | (.digest // "")' <<<"${response}" | head -n 1 | sed 's/^sha256://')"
-win_size="$(jq -r '.assets[] | select(.name | test("Windows")) | .size' <<<"${response}" | head -n 1)"
+pick_asset() {
+  local pattern
+  local asset
 
-android_url="$(jq -r '.assets[] | select(.name | test("Android")) | .browser_download_url' <<<"${response}" | head -n 1)"
-android_sha="$(jq -r '.assets[] | select(.name | test("Android")) | (.digest // "")' <<<"${response}" | head -n 1 | sed 's/^sha256://')"
-android_size="$(jq -r '.assets[] | select(.name | test("Android")) | .size' <<<"${response}" | head -n 1)"
+  for pattern in "$@"; do
+    asset="$(jq -rc --arg pattern "${pattern}" '
+      [
+        .assets[]
+        | select(
+            ((.name // "") | ascii_downcase) as $name
+            | ($name | test($pattern))
+          )
+      ][0] // empty
+    ' <<<"${response}")"
 
-linux_url="$(jq -r '.assets[] | select(.name | test("Linux")) | .browser_download_url' <<<"${response}" | head -n 1)"
-linux_sha="$(jq -r '.assets[] | select(.name | test("Linux")) | (.digest // "")' <<<"${response}" | head -n 1 | sed 's/^sha256://')"
-linux_size="$(jq -r '.assets[] | select(.name | test("Linux")) | .size' <<<"${response}" | head -n 1)"
+    if [[ -n "${asset}" && "${asset}" != "null" ]]; then
+      printf '%s' "${asset}"
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+windows_asset="$(pick_asset '(^|[^a-z])windows([^a-z]|$)' '\.(exe|msix)$' || true)"
+android_asset="$(pick_asset '(^|[^a-z])android([^a-z]|$)' '\.apk$' || true)"
+linux_asset="$(pick_asset '(^|[^a-z])linux([^a-z]|$)' '\.(appimage|tar|tar\.gz|deb|rpm)$' || true)"
+
+win_name="$(jq -r '.name // empty' <<<"${windows_asset}")"
+win_url="$(jq -r '.browser_download_url // empty' <<<"${windows_asset}")"
+win_sha="$(jq -r '(.digest // "") | sub("^sha256:"; "")' <<<"${windows_asset}")"
+win_size="$(jq -r '.size // empty' <<<"${windows_asset}")"
+
+android_name="$(jq -r '.name // empty' <<<"${android_asset}")"
+android_url="$(jq -r '.browser_download_url // empty' <<<"${android_asset}")"
+android_sha="$(jq -r '(.digest // "") | sub("^sha256:"; "")' <<<"${android_asset}")"
+android_size="$(jq -r '.size // empty' <<<"${android_asset}")"
+
+linux_name="$(jq -r '.name // empty' <<<"${linux_asset}")"
+linux_url="$(jq -r '.browser_download_url // empty' <<<"${linux_asset}")"
+linux_sha="$(jq -r '(.digest // "") | sub("^sha256:"; "")' <<<"${linux_asset}")"
+linux_size="$(jq -r '.size // empty' <<<"${linux_asset}")"
 
 if [[ -z "${win_url}" || -z "${android_url}" || -z "${linux_url}" ]]; then
   echo "One or more required assets were not found in latest release." >&2
+  echo "Available assets:" >&2
+  jq -r '.assets[]?.name' <<<"${response}" >&2
   exit 1
 fi
+
+echo "Matched assets:"
+echo "  windows: ${win_name}"
+echo "  android: ${android_name}"
+echo "  linux:   ${linux_name}"
 
 tmp_file="$(mktemp)"
 
@@ -61,7 +100,7 @@ jq \
   --arg linux_url "${linux_url}" \
   --arg linux_sha "${linux_sha}" \
   --argjson linux_size "${linux_size}" \
-  --arg notes_url "https://github.com/${REPO}/releases/tag/${tag}" \
+  --arg notes_url "${release_html_url:-https://github.com/${REPO}/releases/tag/${tag}}" \
   '
   .version = $version |
   .build_number = $build_number |
