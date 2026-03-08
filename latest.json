@@ -18,9 +18,9 @@
       "installer_size": 89706937
     },
     "linux": {
-      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-linux-x64.tar.gz",
-      "portable_sha256": "3f5d45e142b9ba2aab4b1b904815f28f60196774559232a05d846c1a9ab050ce",
-      "portable_size": 75726799
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-linux-x64.AppImage",
+      "portable_sha256": "23f83fe066d17fbb549a36bd9344f372261a8abea2d0b15d94af59f1a1171543",
+      "portable_size": 119851512
     }
   },
   "changelog": {
