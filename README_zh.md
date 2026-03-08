@@ -1,126 +1,127 @@
-**⚠️ 注意：Yaru 为闭源软件。本仓库仅用于版本发布、更新元数据、问题追踪与面向用户的文档。**
+﻿**鈿狅笍 娉ㄦ剰锛歒aru 涓洪棴婧愯蒋浠躲€傛湰浠撳簱浠呯敤浜庣増鏈彂甯冦€佹洿鏂板厓鏁版嵁銆侀棶棰樿拷韪笌闈㈠悜鐢ㄦ埛鐨勬枃妗ｃ€?*
 
-# Yaru（浅颂）
+# Yaru锛堟祬棰傦級
 
-Yaru（やる，to do）是一款面向学习者的 All-in-one 学习工作台，围绕 **输入 → 巩固 → 输出 → 反馈** 的完整闭环设计，帮助你减少工具切换，把注意力集中在学习本身。
+Yaru锛堛倓銈嬶紝to do锛夋槸涓€娆鹃潰鍚戝涔犺€呯殑 All-in-one 瀛︿範宸ヤ綔鍙帮紝鍥寸粫 **杈撳叆 鈫?宸╁浐 鈫?杈撳嚭 鈫?鍙嶉** 鐨勫畬鏁撮棴鐜璁★紝甯姪浣犲噺灏戝伐鍏峰垏鎹紝鎶婃敞鎰忓姏闆嗕腑鍦ㄥ涔犳湰韬€?
 
-## 仓库用途
+## 浠撳簱鐢ㄩ€?
 
-本仓库是 Yaru 的公开发行面，主要用于：
+鏈粨搴撴槸 Yaru 鐨勫叕寮€鍙戣闈紝涓昏鐢ㄤ簬锛?
 
-1. **版本发布（Releases）**：提供各平台安装包与发布资产
-2. **更新元数据**：维护供更新流程与发布工具使用的 `latest.json`
-3. **问题追踪（Issues）**：提交 Bug、功能建议与版本反馈
-4. **用户文档（Docs）**：提供 `docs/` 下的面向用户说明
+1. **鐗堟湰鍙戝竷锛圧eleases锛?*锛氭彁渚涘悇骞冲彴瀹夎鍖呬笌鍙戝竷璧勪骇
+2. **鏇存柊鍏冩暟鎹?*锛氱淮鎶や緵鏇存柊娴佺▼涓庡彂甯冨伐鍏蜂娇鐢ㄧ殑 `latest.json`
+3. **闂杩借釜锛圛ssues锛?*锛氭彁浜?Bug銆佸姛鑳藉缓璁笌鐗堟湰鍙嶉
+4. **鐢ㄦ埛鏂囨。锛圖ocs锛?*锛氭彁渚?`docs/` 涓嬬殑闈㈠悜鐢ㄦ埛璇存槑
 
-在主 Yaru 单体仓库中，本仓库也作为 `Monorepo/distribution/release` 子模块使用。
+鍦ㄤ富 Yaru 鍗曚綋浠撳簱涓紝鏈粨搴撲篃浣滀负 `Monorepo/distribution/release` 瀛愭ā鍧椾娇鐢ㄣ€?
 
-## 下载入口
+## 涓嬭浇鍏ュ彛
 
-- GitHub Releases：<https://github.com/asakatea/Yaru-release/releases>
-- 产品下载页：<https://yaru.asaka.moe/download>
+- GitHub Releases锛?https://github.com/ProjectYaru/Yaru-release/releases>
+- 浜у搧涓嬭浇椤碉細<https://yaru.asaka.moe/download>
 
-如果你想直接获取已发布的原始安装包，请使用 GitHub Releases；如果你想从 Yaru 官网进入统一下载入口，请使用产品下载页。
+濡傛灉浣犳兂鐩存帴鑾峰彇宸插彂甯冪殑鍘熷瀹夎鍖咃紝璇蜂娇鐢?GitHub Releases锛涘鏋滀綘鎯充粠 Yaru 瀹樼綉杩涘叆缁熶竴涓嬭浇鍏ュ彛锛岃浣跨敤浜у搧涓嬭浇椤点€?
 
-## 更新机制说明
+## 鏇存柊鏈哄埗璇存槑
 
-Yaru 的版本更新元数据以 `latest.json` 为中心：
+Yaru 鐨勭増鏈洿鏂板厓鏁版嵁浠?`latest.json` 涓轰腑蹇冿細
 
-- `latest.json` 记录当前版本号、发布日期、最低支持版本，以及各平台下载链接与校验信息。
-- 主 Yaru 仓库中的发布工作流会构建多平台产物、上传到本仓库的 GitHub Release、合并各平台信息生成 `latest.json`，然后从 Release 下载地址反向校验该清单。
-- 只有在 Release 资产上传成功且远端 `latest.json` 校验通过后，主发布流程才会再对 <https://yaru.asaka.moe/download> 发起一次 GET 请求，用于把“下载页访问 / 预热”绑定到真正的发布成功状态上。
+- `latest.json` 璁板綍褰撳墠鐗堟湰鍙枫€佸彂甯冩棩鏈熴€佹渶浣庢敮鎸佺増鏈紝浠ュ強鍚勫钩鍙颁笅杞介摼鎺ヤ笌鏍￠獙淇℃伅銆?
+- 涓?Yaru 浠撳簱涓殑鍙戝竷宸ヤ綔娴佷細鏋勫缓澶氬钩鍙颁骇鐗┿€佷笂浼犲埌鏈粨搴撶殑 GitHub Release銆佸悎骞跺悇骞冲彴淇℃伅鐢熸垚 `latest.json`锛岀劧鍚庝粠 Release 涓嬭浇鍦板潃鍙嶅悜鏍￠獙璇ユ竻鍗曘€?
+- 鍙湁鍦?Release 璧勪骇涓婁紶鎴愬姛涓旇繙绔?`latest.json` 鏍￠獙閫氳繃鍚庯紝涓诲彂甯冩祦绋嬫墠浼氬啀瀵?<https://yaru.asaka.moe/download> 鍙戣捣涓€娆?GET 璇锋眰锛岀敤浜庢妸鈥滀笅杞介〉璁块棶 / 棰勭儹鈥濈粦瀹氬埌鐪熸鐨勫彂甯冩垚鍔熺姸鎬佷笂銆?
 
-需要注意：这次访问本身**不会**自动改写落地页上的下载按钮数据源。如果官网仍显示占位链接或旧的发行说明，那通常是站点数据实现层的问题，而不是发布资产没有上传成功。
+闇€瑕佹敞鎰忥細杩欐璁块棶鏈韩**涓嶄細**鑷姩鏀瑰啓钀藉湴椤典笂鐨勪笅杞芥寜閽暟鎹簮銆傚鏋滃畼缃戜粛鏄剧ず鍗犱綅閾炬帴鎴栨棫鐨勫彂琛岃鏄庯紝閭ｉ€氬父鏄珯鐐规暟鎹疄鐜板眰鐨勯棶棰橈紝鑰屼笉鏄彂甯冭祫浜ф病鏈変笂浼犳垚鍔熴€?
 
-## 维护者视角的发布流程概览
+## 缁存姢鑰呰瑙掔殑鍙戝竷娴佺▼姒傝
 
-1. 在主 Yaru 单体仓库中构建各平台发布产物。
-2. 在 `asakatea/Yaru-release` 中创建或更新对应 GitHub Release。
-3. 上传安装包 / 压缩包，并合并生成 `latest.json`。
-4. 从 Release 下载地址校验远端 `latest.json`。
-5. 校验成功后，再以 GET 请求访问 <https://yaru.asaka.moe/download>。
-6. 如有需要，可再使用本仓库的 `auto-update-latest-json` 工作流，从最新 GitHub Release 重新同步 `latest.json`。
+1. 鍦ㄤ富 Yaru 鍗曚綋浠撳簱涓瀯寤哄悇骞冲彴鍙戝竷浜х墿銆?
+2. 鍦?`ProjectYaru/Yaru-release` 涓垱寤烘垨鏇存柊瀵瑰簲 GitHub Release銆?
+3. 涓婁紶瀹夎鍖?/ 鍘嬬缉鍖咃紝骞跺悎骞剁敓鎴?`latest.json`銆?
+4. 浠?Release 涓嬭浇鍦板潃鏍￠獙杩滅 `latest.json`銆?
+5. 鏍￠獙鎴愬姛鍚庯紝鍐嶄互 GET 璇锋眰璁块棶 <https://yaru.asaka.moe/download>銆?
+6. 濡傛湁闇€瑕侊紝鍙啀浣跨敤鏈粨搴撶殑 `auto-update-latest-json` 宸ヤ綔娴侊紝浠庢渶鏂?GitHub Release 閲嶆柊鍚屾 `latest.json`銆?
 
-## 关键文件
+## 鍏抽敭鏂囦欢
 
-- `latest.json`：本仓库对外提供的更新清单
-- `.github/workflows/auto-update-latest-json.yml`：本仓库内用于定时 / 手动 / 发布后重建 `latest.json` 的工作流
-- `scripts/update-latest-json.sh`：上面工作流调用的脚本，用于读取 GitHub Releases API 并改写 `latest.json`
-- `docs/`：随发行仓库一同维护的用户文档目录
+- `latest.json`锛氭湰浠撳簱瀵瑰鎻愪緵鐨勬洿鏂版竻鍗?
+- `.github/workflows/auto-update-latest-json.yml`锛氭湰浠撳簱鍐呯敤浜庡畾鏃?/ 鎵嬪姩 / 鍙戝竷鍚庨噸寤?`latest.json` 鐨勫伐浣滄祦
+- `scripts/update-latest-json.sh`锛氫笂闈㈠伐浣滄祦璋冪敤鐨勮剼鏈紝鐢ㄤ簬璇诲彇 GitHub Releases API 骞舵敼鍐?`latest.json`
+- `docs/`锛氶殢鍙戣浠撳簱涓€鍚岀淮鎶ょ殑鐢ㄦ埛鏂囨。鐩綍
 
-## 快速入口
+## 蹇€熷叆鍙?
 
-- 下载发布版：<https://github.com/asakatea/Yaru-release/releases>
-- 反馈问题：<https://github.com/asakatea/Yaru-release/issues>
-- 产品下载页：<https://yaru.asaka.moe/download>
-- 中文文档（简体）：[`docs/zh/`](./docs/zh/)
-- 中文文档（繁体）：[`docs/zh_Hant/`](./docs/zh_Hant/)
-- English Docs：[`docs/en/`](./docs/en/)
+- 涓嬭浇鍙戝竷鐗堬細<https://github.com/ProjectYaru/Yaru-release/releases>
+- 鍙嶉闂锛?https://github.com/ProjectYaru/Yaru-release/issues>
+- 浜у搧涓嬭浇椤碉細<https://yaru.asaka.moe/download>
+- 涓枃鏂囨。锛堢畝浣擄級锛歔`docs/zh/`](./docs/zh/)
+- 涓枃鏂囨。锛堢箒浣擄級锛歔`docs/zh_Hant/`](./docs/zh_Hant/)
+- English Docs锛歔`docs/en/`](./docs/en/)
 
-## 同步预期与排查
+## 鍚屾棰勬湡涓庢帓鏌?
 
-- 如果 GitHub Release 已经发布，但落地页短时间内看起来还没变化，先检查 Release 资产和 `latest.json`，不要立即判断发布失败。
-- 如果 `latest.json` 缺少平台字段或下载地址不正确，优先检查主发布工作流日志，以及发布时生成的 Release 资产。
-- 如果落地页本身仍然显示占位按钮或静态版本信息，需要单独检查网站实现；仅仅发布新版本并不会自动改写这些站点内容。
+- 濡傛灉 GitHub Release 宸茬粡鍙戝竷锛屼絾钀藉湴椤电煭鏃堕棿鍐呯湅璧锋潵杩樻病鍙樺寲锛屽厛妫€鏌?Release 璧勪骇鍜?`latest.json`锛屼笉瑕佺珛鍗冲垽鏂彂甯冨け璐ャ€?
+- 濡傛灉 `latest.json` 缂哄皯骞冲彴瀛楁鎴栦笅杞藉湴鍧€涓嶆纭紝浼樺厛妫€鏌ヤ富鍙戝竷宸ヤ綔娴佹棩蹇楋紝浠ュ強鍙戝竷鏃剁敓鎴愮殑 Release 璧勪骇銆?
+- 濡傛灉钀藉湴椤垫湰韬粛鐒舵樉绀哄崰浣嶆寜閽垨闈欐€佺増鏈俊鎭紝闇€瑕佸崟鐙鏌ョ綉绔欏疄鐜帮紱浠呬粎鍙戝竷鏂扮増鏈苟涓嶄細鑷姩鏀瑰啓杩欎簺绔欑偣鍐呭銆?
 
-## 为什么做 Yaru
+## 涓轰粈涔堝仛 Yaru
 
-很多学习工具都很优秀，但通常只覆盖一个环节：
+寰堝瀛︿範宸ュ叿閮藉緢浼樼锛屼絾閫氬父鍙鐩栦竴涓幆鑺傦細
 
-- 输入工具很多，但输入后难以顺畅进入巩固与输出
-- 闪卡工具效果好，但制卡成本高、上下文容易丢失
-- 笔记与知识库工具强大，但容易陷入“搭系统”而不是“学内容”
-- 多端体验割裂，移动端学习与回顾成本高
+- 杈撳叆宸ュ叿寰堝锛屼絾杈撳叆鍚庨毦浠ラ『鐣呰繘鍏ュ珐鍥轰笌杈撳嚭
+- 闂崱宸ュ叿鏁堟灉濂斤紝浣嗗埗鍗℃垚鏈珮銆佷笂涓嬫枃瀹规槗涓㈠け
+- 绗旇涓庣煡璇嗗簱宸ュ叿寮哄ぇ锛屼絾瀹规槗闄峰叆鈥滄惌绯荤粺鈥濊€屼笉鏄€滃鍐呭鈥?
+- 澶氱浣撻獙鍓茶锛岀Щ鍔ㄧ瀛︿範涓庡洖椤炬垚鏈珮
 
-Yaru 的目标是把这些环节连接起来，形成可持续的学习 workflow。
+Yaru 鐨勭洰鏍囨槸鎶婅繖浜涚幆鑺傝繛鎺ヨ捣鏉ワ紝褰㈡垚鍙寔缁殑瀛︿範 workflow銆?
 
-## 核心模块
+## 鏍稿績妯″潡
 
-- **📖 学习模块**：路线图式课程学习（类似 Brilliant / Math Academy）
-- **📚 书库模块**：支持 PDF / EPUB / MOBI / AZW3 / Markdown / HTML
-- **🧠 记忆模块**：间隔重复 + 主动召回
-- **✍️ 创作模块**：积木式编辑器（Block Editor）
-- **🧩 扩展模块**：计划支持浏览器扩展、RSS、视频摘要导入
-- **📝 笔记 / 题库 / 社区**：持续建设中
+- **馃摉 瀛︿範妯″潡**锛氳矾绾垮浘寮忚绋嬪涔狅紙绫讳技 Brilliant / Math Academy锛?
+- **馃摎 涔﹀簱妯″潡**锛氭敮鎸?PDF / EPUB / MOBI / AZW3 / Markdown / HTML
+- **馃 璁板繂妯″潡**锛氶棿闅旈噸澶?+ 涓诲姩鍙洖
+- **鉁嶏笍 鍒涗綔妯″潡**锛氱Н鏈ㄥ紡缂栬緫鍣紙Block Editor锛?
+- **馃З 鎵╁睍妯″潡**锛氳鍒掓敮鎸佹祻瑙堝櫒鎵╁睍銆丷SS銆佽棰戞憳瑕佸鍏?
+- **馃摑 绗旇 / 棰樺簱 / 绀惧尯**锛氭寔缁缓璁句腑
 
-## 主要特点
+## 涓昏鐗圭偣
 
-- Material You 设计，界面简洁无广告
-- 跨平台：Android / Windows / Linux / macOS / Web
-- 学习与记忆一体化，减少重复搬运与导入导出
-- 强调上下文保留，降低“知识碎片化”
+- Material You 璁捐锛岀晫闈㈢畝娲佹棤骞垮憡
+- 璺ㄥ钩鍙帮細Android / Windows / Linux / macOS / Web
+- 瀛︿範涓庤蹇嗕竴浣撳寲锛屽噺灏戦噸澶嶆惉杩愪笌瀵煎叆瀵煎嚭
+- 寮鸿皟涓婁笅鏂囦繚鐣欙紝闄嶄綆鈥滅煡璇嗙鐗囧寲鈥?
 
-## 软件截图
+## 杞欢鎴浘
 
-### 桌面端
+### 妗岄潰绔?
 
-| 首页 | 学习 |
+| 棣栭〉 | 瀛︿範 |
 |---|---|
 | ![Desktop Homepage](pics/desktop/en/homepage.png) | ![Desktop Study](pics/desktop/en/study.png) |
 
-| 书库 | 记忆 |
+| 涔﹀簱 | 璁板繂 |
 |---|---|
 | ![Desktop Library](pics/desktop/en/library.png) | ![Desktop Memory](pics/desktop/en/memoryhub.png) |
 
-| 创作 | 我的 |
+| 鍒涗綔 | 鎴戠殑 |
 |---|---|
 | ![Desktop Create](pics/desktop/en/cr.png) | ![Desktop Mine](pics/desktop/en/mine.png) |
 
-### 移动端
+### 绉诲姩绔?
 
-| 首页 | 学习 |
+| 棣栭〉 | 瀛︿範 |
 |---|---|
 | ![Mobile Homepage](pics/mobile/en/mainpage.png) | ![Mobile Study](pics/mobile/en/study_page.png) |
 
-| 书库 | 记忆 |
+| 涔﹀簱 | 璁板繂 |
 |---|---|
 | ![Mobile Library](pics/mobile/en/library.png) | ![Mobile Memory](pics/mobile/en/memory_hub.png) |
 
-| 笔记块编辑器 | 我的 |
+| 绗旇鍧楃紪杈戝櫒 | 鎴戠殑 |
 |---|---|
 | ![Mobile Note Blocks Editor](pics/mobile/en/note_blocks_editor.png) | ![Mobile Mine](pics/mobile/en/mine.png) |
 
-## 语言版本
+## 璇█鐗堟湰
 
-- 中文：[`README_zh.md`](./README_zh.md)
-- English：[`README_en.md`](./README_en.md)
+- 涓枃锛歔`README_zh.md`](./README_zh.md)
+- English锛歔`README_en.md`](./README_en.md)
+

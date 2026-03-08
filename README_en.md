@@ -1,8 +1,8 @@
-**⚠️ Notice: Yaru is closed-source software. This repository is only for releases, update metadata, issue tracking, and user-facing documentation.**
+﻿**鈿狅笍 Notice: Yaru is closed-source software. This repository is only for releases, update metadata, issue tracking, and user-facing documentation.**
 
 # Yaru
 
-Yaru (from Japanese "やる", meaning "to do") is an all-in-one learning workbench designed around a complete loop: **Input → Consolidation → Output → Feedback**.
+Yaru (from Japanese "銈勩倠", meaning "to do") is an all-in-one learning workbench designed around a complete loop: **Input 鈫?Consolidation 鈫?Output 鈫?Feedback**.
 
 ## Repository Scope
 
@@ -17,7 +17,7 @@ In the main Yaru monorepo, this repository is also used as the `Monorepo/distrib
 
 ## Download Entry Points
 
-- GitHub Releases: <https://github.com/asakatea/Yaru-release/releases>
+- GitHub Releases: <https://github.com/ProjectYaru/Yaru-release/releases>
 - Product download page: <https://yaru.asaka.moe/download>
 
 Use GitHub Releases when you need the raw published assets directly. Use the landing page when you want the public-facing download entry from the Yaru website.
@@ -35,7 +35,7 @@ Important: this page visit does **not** by itself rewrite the landing page's but
 ## Release Flow Overview for Maintainers
 
 1. Build artifacts for supported platforms in the main Yaru monorepo.
-2. Publish or update the GitHub Release in `asakatea/Yaru-release`.
+2. Publish or update the GitHub Release in `ProjectYaru/Yaru-release`.
 3. Upload installers/packages and generate merged `latest.json`.
 4. Verify `latest.json` from the Release download URL.
 5. Ping <https://yaru.asaka.moe/download> with a GET request after verification succeeds.
@@ -50,8 +50,8 @@ Important: this page visit does **not** by itself rewrite the landing page's but
 
 ## Quick Links
 
-- Releases: <https://github.com/asakatea/Yaru-release/releases>
-- Issues: <https://github.com/asakatea/Yaru-release/issues>
+- Releases: <https://github.com/ProjectYaru/Yaru-release/releases>
+- Issues: <https://github.com/ProjectYaru/Yaru-release/issues>
 - Download landing page: <https://yaru.asaka.moe/download>
 - English docs: [`docs/en/`](./docs/en/)
 - Chinese docs (Simplified): [`docs/zh/`](./docs/zh/)
@@ -76,12 +76,12 @@ Yaru connects these phases into one continuous learning workflow.
 
 ## Core Modules
 
-- **📖 Learn**: roadmap-based interactive learning (Brilliant / Math Academy style)
-- **📚 Library**: supports PDF / EPUB / MOBI / AZW3 / Markdown / HTML
-- **🧠 Memory**: spaced repetition + active recall
-- **✍️ Create**: block editor for structured content
-- **🧩 Extensions**: planned browser extension, RSS, and video-summary import
-- **📝 Notes / Problem Bank / Community**: in progress
+- **馃摉 Learn**: roadmap-based interactive learning (Brilliant / Math Academy style)
+- **馃摎 Library**: supports PDF / EPUB / MOBI / AZW3 / Markdown / HTML
+- **馃 Memory**: spaced repetition + active recall
+- **鉁嶏笍 Create**: block editor for structured content
+- **馃З Extensions**: planned browser extension, RSS, and video-summary import
+- **馃摑 Notes / Problem Bank / Community**: in progress
 
 ## Highlights
 
@@ -124,3 +124,4 @@ Yaru connects these phases into one continuous learning workflow.
 
 - Chinese: [`README_zh.md`](./README_zh.md)
 - English: [`README_en.md`](./README_en.md)
+

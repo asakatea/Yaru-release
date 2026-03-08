@@ -1,73 +1,69 @@
-{
-  "version": "0.0.6-alpha",
-  "build_number": 6,
-  "release_date": "2026-03-08T04:01:43Z",
+﻿{
+  "version": "0.0.7-alpha",
+  "build_number": 7,
+  "release_date": "2026-03-08T13:55:12Z",
   "min_supported_version": "0.0.0",
   "platforms": {
     "windows": {
-      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-windows-x64-portable.zip",
-      "portable_sha256": "c82128e5c4d0959ccb0d79a64744bbc22f9a80d16c08fb9b98c68a0aa0e1e752",
-      "portable_size": 131358187,
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-windows-x64-portable.zip",
-      "installer_sha256": "c82128e5c4d0959ccb0d79a64744bbc22f9a80d16c08fb9b98c68a0aa0e1e752",
-      "installer_size": 131358187
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-windows-x64-portable.zip",
+      "portable_sha256": "4e1c63c726ed557a2bbc522cff706eb44dd1a431f29a15c2e3edd1bc70de84b1",
+      "portable_size": 189101637,
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-windows-x64-setup.exe",
+      "installer_sha256": "85bdb0e79a5ecb0acaa852113718836b91ab598a082d64ab0137841b57e1821a",
+      "installer_size": 153296573
     },
     "android": {
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-android-arm64-v8a.apk",
-      "installer_sha256": "e261814ed995c8762efa81412ec43847995867578e0681c4a590c03f5e86a872",
-      "installer_size": 89706937
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-android-arm64-v8a.apk",
+      "installer_sha256": "afa4de6f093342625a3ea142b542463214315738b4014daf93d86534aec7ad93",
+      "installer_size": 89701873
     },
     "linux": {
-      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-linux-x64.AppImage",
-      "portable_sha256": "23f83fe066d17fbb549a36bd9344f372261a8abea2d0b15d94af59f1a1171543",
-      "portable_size": 119851512
+      "appimage_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-linux-x64.AppImage",
+      "appimage_sha256": "6b07caa90a8c244952702e35cce5421513e9db2d9ba97b0615daeaeb7dfb7b45",
+      "appimage_size": 119892472,
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-linux-x64.tar.gz",
+      "portable_sha256": "3dcfcd02f6074c0d9836e4f5ee4e70acefb93150d9b472b35516be5a8205c85a",
+      "portable_size": 133568934
     }
   },
   "changelog": {
     "zh": [
       {
-        "type": "feature",
-        "text": "新增 Windows 安装版 EXE，使用 Inno Setup 打包。"
+        "type": "improvement",
+        "text": "Windows 姝ｅ紡鐗堝惎鐢?release銆乷bfuscate銆乻plit-debug-info 涓?tree-shake-icons锛屽苟鎻愪緵 EXE 瀹夎鍖呭拰 ZIP 渚挎惡鍖呫€?
       },
       {
         "type": "improvement",
-        "text": "Windows 正式版启用 release、obfuscate、split-debug-info 与 tree-shake-icons 优化。"
-      },
-      {
-        "type": "improvement",
-        "text": "Android 发布 armv7、arm64、x86_64 三个 ABI 的正式构建包。"
+        "text": "Android 鍙戝竷 arm64-v8a銆乤rmeabi-v7a銆亁86_64 涓変釜 ABI 鐨勪紭鍖?APK锛岄粯璁ゆ帹鑽?arm64-v8a銆?
       },
       {
         "type": "feature",
-        "text": "Web 端改为 WASM 构建，并推送到 Yaru-VerWeb 实现 push 即 deploy。"
+        "text": "Web 鏀逛负 Flutter WASM + flutter_rust_bridge web pkg 鏋勫缓锛屽苟鎺ㄩ€佸埌 Yaru-VerWeb 楠岃瘉 push 鍗?deploy銆?
       },
       {
         "type": "improvement",
-        "text": "Linux 使用 Arch Linux WSL2 环境完成构建并发布压缩包。"
+        "text": "Linux 鍦?Arch Linux WSL2 涓瀯寤哄苟鍚屾椂鎻愪緵 x64 AppImage 涓?tar.gz 鍖呫€?
       }
     ],
     "en": [
       {
-        "type": "feature",
-        "text": "Added a Windows EXE installer packaged with Inno Setup."
+        "type": "improvement",
+        "text": "Windows release now uses release, obfuscation, split-debug-info, and tree-shake-icons, and ships both an EXE installer and a ZIP portable build."
       },
       {
         "type": "improvement",
-        "text": "Windows release build now uses release, obfuscation, split-debug-info, and tree-shake-icons optimizations."
-      },
-      {
-        "type": "improvement",
-        "text": "Published Android release packages for armv7, arm64, and x86_64 ABIs."
+        "text": "Android now ships optimized arm64-v8a, armeabi-v7a, and x86_64 APKs, with arm64-v8a as the default recommended package."
       },
       {
         "type": "feature",
-        "text": "Web is now built with WASM and pushed to Yaru-VerWeb for push-to-deploy publishing."
+        "text": "Web is now built with Flutter WASM plus the flutter_rust_bridge web pkg and pushed to Yaru-VerWeb with verified push-to-deploy publishing."
       },
       {
         "type": "improvement",
-        "text": "Linux was built in an Arch Linux WSL2 environment and published as a compressed package."
+        "text": "Linux is built in Arch Linux WSL2 and now ships both an x64 AppImage and a tar.gz archive."
       }
     ]
   },
-  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.6-alpha"
+  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.7-alpha"
 }
+
