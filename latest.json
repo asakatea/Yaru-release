@@ -1,7 +1,7 @@
 {
   "version": "0.0.6-alpha",
   "build_number": 6,
-  "release_date": "2026-03-07T17:58:32.051165+00:00",
+  "release_date": "2026-03-08T04:01:43Z",
   "min_supported_version": "0.0.0",
   "platforms": {
     "windows": {
@@ -13,12 +13,12 @@
       "installer_size": 115966410
     },
     "android": {
-      "installer_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.6-alpha/app-arm64-v8a-release.apk",
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/app-arm64-v8a-release.apk",
       "installer_sha256": "e261814ed995c8762efa81412ec43847995867578e0681c4a590c03f5e86a872",
       "installer_size": 89706937
     },
     "linux": {
-      "portable_url": "https://github.com/asakatea/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-linux-x64.tar.gz",
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.6-alpha/yaru-0.0.6-alpha-linux-x64.tar.gz",
       "portable_sha256": "3f5d45e142b9ba2aab4b1b904815f28f60196774559232a05d846c1a9ab050ce",
       "portable_size": 75726799
     }
@@ -69,5 +69,5 @@
       }
     ]
   },
-  "release_notes_url": "https://github.com/asakatea/Yaru-release/releases/tag/0.0.6-alpha"
+  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.6-alpha"
 }
