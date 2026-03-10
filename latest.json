@@ -1,72 +1,72 @@
 {
-  "version": "0.0.7-alpha",
-  "build_number": 7,
-  "release_date": "2026-03-08T13:55:12Z",
+  "version": "0.0.8-alpha",
+  "build_number": 8,
+  "release_date": "2026-03-10T12:16:26.023197+00:00",
   "min_supported_version": "0.0.0",
   "platforms": {
     "windows": {
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-windows-x64-portable.zip",
-      "installer_sha256": "4e1c63c726ed557a2bbc522cff706eb44dd1a431f29a15c2e3edd1bc70de84b1",
-      "installer_size": 189101637,
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.8-alpha/yaru-0.0.8-alpha-windows-x64-setup.exe",
+      "installer_sha256": "dee49860652d9ae2da8894e108b2959ac51e3d4469bcd1e14ea18cdc454cde0f",
+      "installer_size": 153459800,
       "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.8-alpha/yaru-0.0.8-alpha-windows-x64-portable.zip",
       "portable_sha256": "729a6b7ec50cc6c72ea5132262241a38b68383002a8efacf3d46acb75cedfc0e",
       "portable_size": 189331877
     },
     "android": {
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-android-arm64-v8a.apk",
-      "installer_sha256": "afa4de6f093342625a3ea142b542463214315738b4014daf93d86534aec7ad93",
-      "installer_size": 89701873
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.8-alpha/yaru-0.0.8-alpha-android-arm64-v8a.apk",
+      "installer_sha256": "f49f79e0e6d09075c6eb56ccba2483d6b3dd371e64e11dcf0df81aeae48ef0a6",
+      "installer_size": 90213309
     },
     "linux": {
       "appimage_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.8-alpha/yaru-0.0.8-alpha-linux-x64.AppImage",
       "appimage_sha256": "e5ec4faa9ec5d81129f9b58e934b0ef93963b7664598874eb7db4fbc08924c91",
       "appimage_size": 117656056,
-      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.7-alpha/yaru-0.0.7-alpha-linux-x64.AppImage",
-      "portable_sha256": "6b07caa90a8c244952702e35cce5421513e9db2d9ba97b0615daeaeb7dfb7b45",
-      "portable_size": 119892472
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.8-alpha/yaru-0.0.8-alpha-linux-x64.tar.gz",
+      "portable_sha256": "0b8ba7b4dafa2698e46bac81e641efda1e2de6aa7bb0f01bf01b8707c6aa5cb7",
+      "portable_size": 131026187
     }
   },
   "changelog": {
     "zh": [
       {
         "type": "feature",
-        "text": "???????????????"
+        "text": "番茄钟计时可跨页面保持与恢复。"
       },
       {
         "type": "improvement",
-        "text": "???????????????????????"
+        "text": "移动端底部导航替换为悬浮胶囊栏，主入口更集中。"
       },
       {
         "type": "improvement",
-        "text": "???????????????????? App Bar?"
+        "text": "练习题库与个人页子页面统一使用移动端壳层 App Bar。"
       },
       {
         "type": "fix",
-        "text": "????? WebView ????????????????"
+        "text": "学习路线图 WebView 无法加载时自动回退到原生路线图。"
       },
       {
         "type": "improvement",
-        "text": "?????????????????????"
+        "text": "课程列表与路线图内容完成本地化并内嵌展示。"
       },
       {
         "type": "fix",
-        "text": "????????????????????"
+        "text": "笔记本地保存恢复流程加固，降低丢失风险。"
       },
       {
         "type": "fix",
-        "text": "???????????????????????"
+        "text": "移动端启动同步改为缓存优先，首屏更快且更稳定。"
       },
       {
         "type": "fix",
-        "text": "???????????????????????"
+        "text": "团队大厅去重并修正加入状态，空团队名自动兜底。"
       },
       {
         "type": "improvement",
-        "text": "????????????????"
+        "text": "题目图谱主题色与节点样式规范化。"
       },
       {
         "type": "fix",
-        "text": "?????????????????????????"
+        "text": "个人主页等级展示切换为雪花等级，移除失效贡献卡片。"
       }
     ],
     "en": [
@@ -112,5 +112,5 @@
       }
     ]
   },
-  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.7-alpha"
+  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.8-alpha"
 }
