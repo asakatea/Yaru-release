@@ -1,60 +1,60 @@
 {
-    "version":  "0.0.9-alpha",
-    "build_number":  9,
-    "release_date":  "2026-03-11T14:20:57.1990146Z",
-    "min_supported_version":  "0.0.0",
-    "platforms":  {
-                      "windows":  {
-                                      "installer_url":  "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-windows-x64-setup.exe",
-                                      "installer_sha256":  "9eb48e452963bfc220a3ae0d538f485ca4d004e5d79085a365053093dc797e7a",
-                                      "installer_size":  153450232,
-                                      "portable_url":  "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-windows-x64-portable.zip",
-                                      "portable_sha256":  "d30bb8d13ae3a70a5a76a249795cd52c99f48abc12762e0e11fe49c20d9a3a8d",
-                                      "portable_size":  64410285
-                                  },
-                      "android":  {
-                                      "installer_url":  "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-android-arm64-v8a.apk",
-                                      "installer_sha256":  "48b02642dfc768e636c4eecaa974e99ca70621f0358fd8d6056117354bf79e47",
-                                      "installer_size":  90047793
-                                  },
-                      "linux":  {
-                                    "appimage_url":  "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-linux-x64.AppImage",
-                                    "appimage_sha256":  "dad621d0c362a494e8ab300e9fea5e718771ac1b72865dafbb6f769eab71c115",
-                                    "appimage_size":  73499840,
-                                    "portable_url":  "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-linux-x64.tar.gz",
-                                    "portable_sha256":  "71eda477488d9ebb3adbb809f731c68827415c9f09f4af2210268bb19019fb72",
-                                    "portable_size":  73215266
-                                }
-                  },
-    "changelog":  {
-                      "zh":  [
-                                 {
-                                     "text":  "统一移动端子页面的 Shell App Bar 样式与返回行为，减少题库、个人页等页面切换时的割裂感。",
-                                     "type":  "fix"
-                                 },
-                                 {
-                                     "text":  "重新生成发布清单与说明文案，修复上一版发布材料中的中文乱码。",
-                                     "type":  "improvement"
-                                 },
-                                 {
-                                     "text":  "同步更新 Windows 安装包、Windows 便携版、Android 多 ABI、Linux AppImage/tar.gz 与 Web/WASM 构建。",
-                                     "type":  "improvement"
-                                 }
-                             ],
-                      "en":  [
-                                 {
-                                     "text":  "Normalized the mobile shell app bar style and back behavior across subpages such as practice and profile.",
-                                     "type":  "fix"
-                                 },
-                                 {
-                                     "text":  "Regenerated release manifests and notes in clean UTF-8 to remove the mojibake seen in the previous release materials.",
-                                     "type":  "improvement"
-                                 },
-                                 {
-                                     "text":  "Refreshed the full distribution set: Windows installer and portable ZIP, Android multi-ABI APKs, Linux AppImage/tar.gz, and the Web/WASM build.",
-                                     "type":  "improvement"
-                                 }
-                             ]
-                  },
-    "release_notes_url":  "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.9-alpha"
+  "version": "0.0.9-alpha",
+  "build_number": 9,
+  "release_date": "2026-03-11T14:29:50Z",
+  "min_supported_version": "0.0.0",
+  "platforms": {
+    "windows": {
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-windows-x64-portable.zip",
+      "installer_sha256": "d30bb8d13ae3a70a5a76a249795cd52c99f48abc12762e0e11fe49c20d9a3a8d",
+      "installer_size": 64410285,
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-windows-x64-portable.zip",
+      "portable_sha256": "d30bb8d13ae3a70a5a76a249795cd52c99f48abc12762e0e11fe49c20d9a3a8d",
+      "portable_size": 64410285
+    },
+    "android": {
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-android-arm64-v8a.apk",
+      "installer_sha256": "48b02642dfc768e636c4eecaa974e99ca70621f0358fd8d6056117354bf79e47",
+      "installer_size": 90047793
+    },
+    "linux": {
+      "appimage_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-linux-x64.AppImage",
+      "appimage_sha256": "dad621d0c362a494e8ab300e9fea5e718771ac1b72865dafbb6f769eab71c115",
+      "appimage_size": 73499840,
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-linux-x64.AppImage",
+      "portable_sha256": "dad621d0c362a494e8ab300e9fea5e718771ac1b72865dafbb6f769eab71c115",
+      "portable_size": 73499840
+    }
+  },
+  "changelog": {
+    "zh": [
+      {
+        "text": "统一移动端子页面的 Shell App Bar 样式与返回行为，减少题库、个人页等页面切换时的割裂感。",
+        "type": "fix"
+      },
+      {
+        "text": "重新生成发布清单与说明文案，修复上一版发布材料中的中文乱码。",
+        "type": "improvement"
+      },
+      {
+        "text": "同步更新 Windows 安装包、Windows 便携版、Android 多 ABI、Linux AppImage/tar.gz 与 Web/WASM 构建。",
+        "type": "improvement"
+      }
+    ],
+    "en": [
+      {
+        "text": "Normalized the mobile shell app bar style and back behavior across subpages such as practice and profile.",
+        "type": "fix"
+      },
+      {
+        "text": "Regenerated release manifests and notes in clean UTF-8 to remove the mojibake seen in the previous release materials.",
+        "type": "improvement"
+      },
+      {
+        "text": "Refreshed the full distribution set: Windows installer and portable ZIP, Android multi-ABI APKs, Linux AppImage/tar.gz, and the Web/WASM build.",
+        "type": "improvement"
+      }
+    ]
+  },
+  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.0.9-alpha"
 }
