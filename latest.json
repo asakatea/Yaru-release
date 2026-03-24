@@ -1,29 +1,29 @@
 {
-  "version": "0.1.0-preview",
-  "build_number": 0,
-  "release_date": "2026-03-24T06:01:21Z",
+  "version": "0.1.1-preview",
+  "build_number": 1,
+  "release_date": "2026-03-24T23:52:55Z",
   "min_supported_version": "0.0.0",
   "platforms": {
     "windows": {
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.0-preview/yaru-0.1.0-preview-windows-x64-portable.zip",
-      "installer_sha256": "06ea85248f26b2d718eb39fac8178e9475ebd95aeff828a38dae86c06971e91c",
-      "installer_size": 134075569,
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.1-preview/yaru-0.1.1-preview-windows-x64-portable.zip",
+      "installer_sha256": "6b7f637abc4e07e932af543bce8c6d705a2e96f44b4162b1faee9a53534908fb",
+      "installer_size": 64634329,
       "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-windows-x64-portable.zip",
       "portable_sha256": "d30bb8d13ae3a70a5a76a249795cd52c99f48abc12762e0e11fe49c20d9a3a8d",
       "portable_size": 64410285
     },
     "android": {
-      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.0-preview/yaru-0.1.0-preview-android-arm64-v8a.apk",
-      "installer_sha256": "4d099ea177c4b3e29d729738222c16ef32ce3c93ae8bd1b12c6d9ee41fe47414",
-      "installer_size": 91099148
+      "installer_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.1-preview/yaru-0.1.1-preview-android-arm64-v8a.apk",
+      "installer_sha256": "1e67dc09c31cef11a6a133b1091baedfb53fc13d72c25478b5abbc1f647cae47",
+      "installer_size": 90647237
     },
     "linux": {
       "appimage_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.0.9-alpha/yaru-0.0.9-alpha-linux-x64.AppImage",
       "appimage_sha256": "dad621d0c362a494e8ab300e9fea5e718771ac1b72865dafbb6f769eab71c115",
       "appimage_size": 73499840,
-      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.0-preview/yaru-0.1.0-preview-linux-x64.AppImage",
-      "portable_sha256": "571a9f807f294ee0b0abc42665d2f34d9025025e940a9595d6e9c05c6eedd07e",
-      "portable_size": 75031744
+      "portable_url": "https://github.com/ProjectYaru/Yaru-release/releases/download/0.1.1-preview/yaru-0.1.1-preview-linux-x64.AppImage",
+      "portable_sha256": "a58c648d9dbfc0e08dae742a6e3a1feef6030221714d5a9929efee43bb35c657",
+      "portable_size": 74814656
     }
   },
   "changelog": {
@@ -56,5 +56,5 @@
       }
     ]
   },
-  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.1.0-preview"
+  "release_notes_url": "https://github.com/ProjectYaru/Yaru-release/releases/tag/0.1.1-preview"
 }
